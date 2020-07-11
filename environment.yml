@@ -1,0 +1,19 @@
+name: wind_pred
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.7
+  - setuptools
+  - wheel
+  - notebook
+  - requests
+  - numpy
+  - matplotlib
+  - pandas
+  - geopandas
+  - scikit-learn
+  - pip
+  - pip:
+    - -e .
+    - python-dotenv>=0.5.1
