@@ -59,6 +59,11 @@ download_nws_usa_states_shapefile:
 download_uswtdb:
 	$(PYTHON_INTERPRETER) src/data/download_uswtdb.py
 
+## Filter turbines to miso area, and only contiguous states miso shapefile
+.PHONY: select_miso_turbines
+select_miso_turbines:
+	$(PYTHON_INTERPRETER) src/data/process_filter_cont_usa_convert_crs.py
+
 #################################################################################
 # Self Documenting Commands                                                     #
 #################################################################################
